@@ -20,4 +20,4 @@ with open('./intelData/10Mar1-01.json') as i:
         else:
             counts[packet_size] = 1
 
-    print(counts "\n:")
+    print(counts)
