@@ -3,6 +3,8 @@ We try to identify drone model by looking into its wireless network data.
 At current stage, we assume the data is captured by wireshark. However, we should be able
 to eliminate this third party tool by using TCPDump and build our own network packet parsing tool.
 
+We are currently adapting scripts for the Intel UAS. Our first look into python and data analysis.
+
 HOW TO CAPTURE in CLI:
 
     usage: capture.py [-h] [--monitor] [--file <output file for captured data>]
@@ -39,6 +41,9 @@ When using this project repo, please cite as:
 Drone profiling through wireless fingerprinting
 Hualiang Li, Garret Johnson, Maverick Jennings and Yingfei Dong
 2017 IEEE 7th Annual International Conference on CYBER Technology in Automation, Control, and Intelligent Systems (CYBER)
+
+
+*The following scripts have been added to the tools directory. We are adapting the json parser to the Intel UAS to expand the breadth of the UAV Classifier.
 
 A brief documentation about each script file:
 
