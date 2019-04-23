@@ -3,7 +3,7 @@ We try to identify drone model by looking into its wireless network data.
 At current stage, we assume the data is captured by wireshark. However, we should be able
 to eliminate this third party tool by using TCPDump and build our own network packet parsing tool.
 
-We are currently adapting scripts for the Intel UAS. Our first look into python and data analysis.
+We are currently adapting scripts for the Intel UAS. Our first look into python, data analysis, and git!
 
 HOW TO CAPTURE in CLI:
 
