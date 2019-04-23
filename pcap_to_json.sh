@@ -1,6 +1,6 @@
 #!/bin/bash
 ##Path to pcap files.
-FILES = /Users/lhl/GoogleDrive/02_hualiang/UAV_Classifier/*
+FILES=./intelData
 ##gets all files that are in the Folder
 for f in $FILES
 do
