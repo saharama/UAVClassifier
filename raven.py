@@ -118,7 +118,7 @@ with open('./intelData/10Mar3-01.json') as i:
 	#graph packet size vs frequency of size
 	#plt.plot(sizeCounts)
 #	fig1 = plt.figure()
-	plt.scatter(list(sizeCounts3.keys()), sizeCounts3.values(), color='b')
+	plt.scatter(list(sizeCounts3.keys()), sizeCounts3.values(), color='b', legend = True, ax = ax)
 	plt.grid()
 	plt.title('Correlation of Packet-Size Frequency for 3 Trials')
 	plt.xlabel('Packet Size')
@@ -126,6 +126,6 @@ with open('./intelData/10Mar3-01.json') as i:
 
 	#plt.xlim(0, 50)
 
-	plt.gca().legend(('Trial 1','Trial 2', 'Trial 3'))
+	#plt.gca().legend(('Trial 1','Trial 2', 'Trial 3'))
 
 	plt.show()
