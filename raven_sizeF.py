@@ -38,26 +38,6 @@ with open('./intelData/10Mar1-01.json') as i:
 	plt.scatter(list(sizeCounts1.keys()), sizeCounts1.values(), color='g')
 	#plt.grid()
 
-#print relative time between packets
-'''
-	timeCounts = {}
-	for packet in a:
-		packet_relTime = float(packet['_source']['layers']['frame']['frame.time_relative'])
-
-		if packet_relTime in timeCounts:
-			timeCounts[packet_relTime] = timeCounts[packet_relTime] + 1
-		else:
-			timeCounts[packet_relTime] = 1
-
-	print(timeCounts)
-
-#graph relative packet time vs frequency of relative time
-	fig2 = plt.figure()
-	plt.scatter(list(timeCounts.keys()), timeCounts.values(), color='r')
-	plt.grid()
-	#plt.show()
-'''
-
 with open('./intelData/10Mar2-01.json') as i:
 	a = json.load(i, object_pairs_hook=dict_ignore_on_duplicates)
 
@@ -79,25 +59,6 @@ with open('./intelData/10Mar2-01.json') as i:
 	#fig1 = plt.figure()
 	plt.scatter(list(sizeCounts2.keys()), sizeCounts2.values(), color='r')
 	#plt.grid()
-'''
-#print relative time between packets
-	timeCounts = {}
-	for packet in a:
-		packet_relTime = float(packet['_source']['layers']['frame']['frame.time_relative'])
-
-		if packet_relTime in timeCounts:
-			timeCounts[packet_relTime] = timeCounts[packet_relTime] + 1
-		else:
-			timeCounts[packet_relTime] = 1
-
-	print(timeCounts)
-
-#graph relative packet time vs frequency of relative time
-	fig4 = plt.figure()
-	plt.scatter(list(timeCounts.keys()), timeCounts.values(), color='r')
-	plt.grid()
-	plt.show()
-'''
 
 with open('./intelData/10Mar3-01.json') as i:
 	a = json.load(i, object_pairs_hook=dict_ignore_on_duplicates)
@@ -118,7 +79,7 @@ with open('./intelData/10Mar3-01.json') as i:
 	#graph packet size vs frequency of size
 	#plt.plot(sizeCounts)
 #	fig1 = plt.figure()
-	plt.scatter(list(sizeCounts3.keys()), sizeCounts3.values(), color='b', legend = True, ax = ax)
+	plt.scatter(list(sizeCounts3.keys()), sizeCounts3.values(), color='b')
 	plt.grid()
 	plt.title('Correlation of Packet-Size Frequency for 3 Trials')
 	plt.xlabel('Packet Size')
@@ -126,6 +87,6 @@ with open('./intelData/10Mar3-01.json') as i:
 
 	#plt.xlim(0, 50)
 
-	#plt.gca().legend(('Trial 1','Trial 2', 'Trial 3'))
+	plt.gca().legend(('Trial 1','Trial 2', 'Trial 3'))
 
 	plt.show()
